@@ -6,7 +6,7 @@ class Modele {
         try {
             $url = "mysql:host=localhost;dbname=wmd_23";
             $user = "root";
-            $mdp = "root";
+            $mdp = "";
             $this->unPdo = new PDO($url, $user, $mdp);
         } catch (PDOException $exp) {
             echo "<br> Erreur de connexion à la BDD : " . $exp->getMessage();
@@ -52,8 +52,18 @@ class Modele {
         );
         $select = $this->unPdo->prepare($requete);
         $select->execute($donnees);
-        return $select->fetch();
+        $userData = $select->fetch(PDO::FETCH_ASSOC);
+    
+        if ($userData) {
+            $user = new User();
+            $user->renseigner($userData);
+            return $user;
+        } else {
+            return null;
+        }
     }
+    
+
 
     public function getUsers() {
         $requete = "SELECT * FROM utilisateurs";
