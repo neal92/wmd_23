@@ -4,7 +4,7 @@ class User {
 
     public function __construct() {
         $this->iduser = 0;
-        $this->nom = $this->prenom = $this->age = $this->email = $this->telephone = $this->mdp="";
+        $this->nom = $this->prenom = $this->age = $this->email = $this->telephone = $this->mdp = "";
         $this->dateInscription = 0;
     }
 
@@ -18,7 +18,7 @@ class User {
         $this->mdp = $tab['mdp']; 
         $this->dateInscription = (isset($tab['dateInscription'])) ? $tab['dateInscription'] : 0;
     }
-    
+
     public function afficherHtml() {
         return "
         <br> nom : " . $this->nom . "
@@ -80,6 +80,7 @@ class User {
     public function setAge($age) {
         $this->age = $age;
     }
+
     public function getEmail() {
         return $this->email;
     }
@@ -88,11 +89,11 @@ class User {
         $this->email = $email;
     }
 
-    public function gettelephone() {
+    public function getTelephone() {
         return $this->telephone;
     }
     
-    public function settelephone($telephone) {
+    public function setTelephone($telephone) {
         $this->telephone = $telephone;
     }
 
