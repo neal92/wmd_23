@@ -75,7 +75,7 @@ $utilisateurConnecte = isset($_SESSION['user']) && $_SESSION['user'] instanceof 
 
 
     <center>
-        <img src="images/logo-wmd.png" alt="logo" width="500px">
+        <img src="images/logo.png" alt="logo" width="500px">
 
                 <br>
         <?php
