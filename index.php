@@ -65,7 +65,7 @@ $utilisateurConnecte = isset($_SESSION['user']) && $_SESSION['user'] instanceof 
             </span>
             <li class="nav-item">
                 <a class="nav-link" href="index.php?page=6">
-                    <img src="image/deconnexion.png" alt="Déconnexion" style="height: 20px;">
+                    <img src="images/deconnexion.png" alt="Déconnexion" style="height: 20px;">
                 </a>
             </li>
             <?php endif; ?>
@@ -75,10 +75,9 @@ $utilisateurConnecte = isset($_SESSION['user']) && $_SESSION['user'] instanceof 
 
 
     <center>
+        <img src="images/logo-wmd.png" alt="logo" width="500px">
 
-        <h1>Wemakedonation</h1>
-
-
+                <br>
         <?php
         $unControleur = new Controleur();
 
