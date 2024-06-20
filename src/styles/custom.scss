@@ -1,0 +1,21 @@
+// Import de Bootstrap depuis node_modules
+@import "node_modules/bootstrap/scss/bootstrap";
+
+
+// Définition des variables pour les modes clair et sombre
+$background-color-light: #ffffff;
+$text-color-light: #333333;
+$background-color-dark: #333333;
+$text-color-dark: #ffffff;
+
+// Styles pour le mode clair
+body {
+    background-color: $background-color-light;
+    color: $text-color-light;
+}
+
+// Styles pour le mode sombre
+body.dark-mode {
+    background-color: $background-color-dark;
+    color: $text-color-dark;
+}
