@@ -75,8 +75,6 @@ $utilisateurConnecte = isset($_SESSION['user']) && $_SESSION['user'] instanceof 
 
 
     <center>
-        <img src="images/logo.png" alt="logo" width="500px">
-
                 <br>
         <?php
         $unControleur = new Controleur();
@@ -104,6 +102,13 @@ $utilisateurConnecte = isset($_SESSION['user']) && $_SESSION['user'] instanceof 
             } else {
                 echo "<p>Erreur de connexion. Veuillez vérifier vos identifiants.</p>";
             }
+        }
+
+        
+        // Condition pour ne pas afficher le logo sur les pages d'inscription et de connexion
+        $page = isset($_GET['page']) ? $_GET['page'] : 1;
+        if ($page != 2 && $page != 3) {
+            echo '<img src="images/logo.png" alt="logo" width="500px"><br>';
         }
 
         $page = isset($_GET['page']) ? $_GET['page'] : 1;

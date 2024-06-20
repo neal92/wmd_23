@@ -6,7 +6,7 @@ class Modele {
         try {
             $url = "mysql:host=localhost;dbname=wmd_23";
             $user = "root";
-            $mdp = "root";
+            $mdp = "";
             $this->unPdo = new PDO($url, $user, $mdp);
         } catch (PDOException $exp) {
             echo "<br> Erreur de connexion à la BDD : " . $exp->getMessage();
@@ -33,7 +33,10 @@ class Modele {
             $select = $this->unPdo->prepare($requete);
             $select->execute($donnees);
     
-            echo "<p>Inscription réussie.</p>";
+            // Redirection vers la page de connexion après inscription réussie
+            header("Location: index.php?page=3");
+            exit(); // Assure que le script s'arrête après la redirection
+    
         } catch (PDOException $e) {
             if ($e->getCode() == '45000') {
                 echo "<p>Erreur: " . $e->getMessage() . "</p>";
