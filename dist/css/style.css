@@ -9282,3 +9282,18 @@ body {
 body.dark-mode {
   background-color: #333333;
   color: #ffffff; }
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: #f8f9fa;
+  padding: 20px; }
+
+nav.dark-mode {
+  background-color: #333333;
+  color: #ffffff; }
+
+footer.dark-mode {
+  background-color: #333333;
+  color: #ffffff; }

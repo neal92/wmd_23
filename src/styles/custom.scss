@@ -3,19 +3,39 @@
 
 
 // Définition des variables pour les modes clair et sombre
-$background-color-light: #ffffff;
-$text-color-light: #333333;
-$background-color-dark: #333333;
-$text-color-dark: #ffffff;
+$background-color-white: #ffffff;
+$text-color-black: #333333;
+$background-color-black: #333333;
+$text-color-white: #ffffff;
 
 // Styles pour le mode clair
 body {
-    background-color: $background-color-light;
-    color: $text-color-light;
+    background-color: $background-color-white;
+    color: $text-color-black;
 }
 
 // Styles pour le mode sombre
 body.dark-mode {
-    background-color: $background-color-dark;
-    color: $text-color-dark;
+    background-color: $background-color-black;
+    color: $text-color-white;
 }
+
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #f8f9fa;
+    padding: 20px;
+}
+
+nav.dark-mode {
+        background-color: $background-color-black;
+        color: $text-color-white;
+    }
+
+
+footer.dark-mode {
+        background-color: $background-color-black;
+        color: $text-color-white;
+    }

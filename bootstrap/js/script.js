@@ -14,3 +14,13 @@
             document.body.classList.add('dark-mode');
         }
     }
+
+    function setLightMode() {
+        document.body.classList.remove('dark-mode');
+        localStorage.setItem('darkMode', 'disabled');
+    }
+
+    function setDarkMode() {
+        document.body.classList.add('dark-mode');
+        localStorage.setItem('darkMode', 'enabled');
+    }

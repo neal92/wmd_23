@@ -16,24 +16,12 @@ $utilisateurConnecte = isset($_SESSION['user']) && $_SESSION['user'] instanceof 
 <html>
 <head>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-
-    <title>Projet wmd_23</title>
+    <link rel="stylesheet" href="dist/css/style.css">
+    <script src="bootstrap/js/script.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+    <title>Projet wmd_23</title>
+
 </head>
-<style>
-        body {
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-            margin: 0;
-        }
-        footer {
-            background-color: #f8f9fa;
-            padding: 20px;
-            margin-top: auto;
-            width: 100%;
-        }
-    </style>
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <ul class="navbar-nav mr-auto">
@@ -61,15 +49,17 @@ $utilisateurConnecte = isset($_SESSION['user']) && $_SESSION['user'] instanceof 
             <?php endif; ?>
 
             <?php if ($utilisateurConnecte): ?>
-            <span class="navbar-text mr-3">
-                Bienvenue <?php echo htmlspecialchars($_SESSION['user']->getNom()); ?>
-            </span>
-            <li class="nav-item">
-                <a class="nav-link" href="index.php?page=6">
-                    <img src="images/deconnexion.png" alt="Déconnexion" style="height: 20px;">
-                </a>
-            </li>
+
+                <span class="navbar-text mr-3">
+                    Bienvenue <?php echo htmlspecialchars($_SESSION['user']->getNom()); ?>
+                </span>
+                <button type="button" class="btn btn-danger">
+                    <a class="nav-link text-white" href="index.php?page=6" style="padding: 0;">Déconnexion</a>
+                </button>
             <?php endif; ?>
+
+            <button type ="button" class ="btn" onclick="setLightMode()"><img src="images\brightness-high.svg" alt="logo clair"></button>
+            <button type ="button" class ="btn" onclick="setDarkMode()"><img src="images\moon-stars-fill.svg" alt="logo lune"></button>
         </ul>
     </nav>
     <center>
@@ -134,10 +124,6 @@ $utilisateurConnecte = isset($_SESSION['user']) && $_SESSION['user'] instanceof 
         ?>
     </center>
 <br>
-
-
-
-   
 </body>
 
     <footer>
