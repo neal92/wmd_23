@@ -9277,10 +9277,10 @@ textarea.form-control-lg {
 
 body {
   background-color: #ffffff;
-  color: #333333; }
+  color: #656565; }
 
 body.dark-mode {
-  background-color: #333333;
+  background-color: #656565;
   color: #ffffff; }
 
 footer {
@@ -9291,9 +9291,9 @@ footer {
   padding: 20px; }
 
 nav.dark-mode {
-  background-color: #333333;
+  background-color: #656565;
   color: #ffffff; }
 
 footer.dark-mode {
-  background-color: #333333;
+  background-color: #656565;
   color: #ffffff; }
