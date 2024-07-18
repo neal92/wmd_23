@@ -9287,7 +9287,7 @@ footer {
   position: absolute;
   bottom: 0;
   width: 100%;
-  background-color: #f8f9fa;
+  background-color: #9b9898;
   padding: 20px; }
 
 nav.dark-mode {
@@ -9297,3 +9297,8 @@ nav.dark-mode {
 footer.dark-mode {
   background-color: #656565;
   color: #ffffff; }
+
+nav {
+  width: 100%;
+  background-color: #9b9898;
+  padding: 20px; }

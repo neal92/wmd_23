@@ -17,7 +17,7 @@ $utilisateurConnecte = isset($_SESSION['user']) && $_SESSION['user'] instanceof 
 <head>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="dist/css/style.css">
-    <script src="bootstrap/js/script.js"></script>
+    <script src="bootstrap/js/.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
     <title>Projet wmd_23</title>
 

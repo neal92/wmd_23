@@ -25,7 +25,7 @@ footer {
     position: absolute;
     bottom: 0;
     width: 100%;
-    background-color: #f8f9fa;
+    background-color: #9b9898;
     padding: 20px;
 }
 
@@ -39,3 +39,9 @@ footer.dark-mode {
         background-color: $background-color-dark;
         color: $text-color-light;
     }
+
+nav {
+        width: 100%;
+        background-color: #9b9898;
+        padding: 20px;
+        }
